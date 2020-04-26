@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- File structure
-- Composer dependencies
-- Test environment 
+- PSR-14 interfaces as a dependency
+- `Event`, `EventGenerator`, `EventListerner` and `Event dispatcher` interfaces
+- PSR-14 `EventDispatcherInterface` implementation
 
 [Unreleased]: https://github.com/slickframework/event/compare/be7a44d...HEAD
