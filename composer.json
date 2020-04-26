@@ -20,7 +20,9 @@
     },
     "require": {
         "php": ">=7.2",
-        "psr/event-dispatcher": "^1.0@dev"
+        "ext-json": "*",
+        "psr/event-dispatcher": "^1.0@dev",
+        "ramsey/uuid": "^4.0@dev"
     },
     "scripts": {
         "test": "phpspec run --format=dot",

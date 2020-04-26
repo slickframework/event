@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Composer dependencies
 - Test environment 
 
-[Unreleased]: https://github.com/slickframework/event/compare/5f82be...HEAD
+[Unreleased]: https://github.com/slickframework/event/compare/be7a44d...HEAD
