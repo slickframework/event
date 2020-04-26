@@ -1,0 +1,4 @@
+suites:
+  slick_event_suite:
+    namespace: Slick\Event
+    psr4_prefix: Slick\Event

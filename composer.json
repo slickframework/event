@@ -1,0 +1,47 @@
+{
+    "name": "slick/event",
+    "description": "Simple PSR-14 event handling implementation.",
+    "type": "library",
+    "license": "MIT",
+    "version": "v0.1.0",
+    "homepage": "https://github.com/slickframework/event",
+    "authors": [
+        {
+            "name": "Filipe Silva",
+            "email": "silvam.filipe@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Slick\\Event\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "psr/event-dispatcher": "^1.0@dev"
+    },
+    "scripts": {
+        "test": "phpspec run --format=dot",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev",
+            "dev-develop": "0.2-dev"
+        }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^6.1@dev",
+        "squizlabs/php_codesniffer": "^3.0@dev"
+    }
+}
