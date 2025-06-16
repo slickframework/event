@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/github/release/slickframework/event.svg?style=flat-square)](https://github.com/slickframework/event/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/slickframework/event/master.svg?style=flat-square)](https://travis-ci.org/slickframework/event)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/slickframework/event/continuous-integration.yml?style=flat-square)](https://github.com/slickframework/event/actions/workflows/continuous-integration.yml)
 [![Quality Score](https://img.shields.io/scrutinizer/g/slickframework/event/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/slickframework/event?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/slick/event.svg?style=flat-square)](https://packagist.org/packages/slick/event)
 
