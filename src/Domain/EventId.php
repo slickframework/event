@@ -50,5 +50,4 @@ final class EventId
     {
         return $this->identifier;
     }
-
 }
