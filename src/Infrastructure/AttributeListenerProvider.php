@@ -39,10 +39,8 @@ final class AttributeListenerProvider implements ListenerProviderInterface
     {
         $listeners = [];
         foreach ($this->resolver->resolve() as $binding) {
-            foreach ($binding as $item) {
-                if ($this->match($item['event'], $event)) {
-                    $listeners[] = (object) ['listener' => $item['listener'], 'priority' => $item['priority']];
-                }
+            if ($this->match($binding['event'], $event)) {
+                $listeners[] = (object) ['listener' => $binding['listener'], 'priority' => $binding['priority']];
             }
         }
 
