@@ -7,11 +7,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.1.0] - 2025-06-17
+### Added
+- Adding a Scrutinizer CI configuration for static analysis
+- Attribute-based listener discovery
+
+### Changed
+- Updating the PHP version to 8.2
+- Switching from Travis CI to GitHub Actions for CI
+- Updating dependencies and dev dependencies to their latest versions
+
 ## [v1.0.0] - 2020-04-26
 ### Added
 - PSR-14 interfaces as a dependency
 - `Event`, `EventGenerator`, `EventListerner` and `Event dispatcher` interfaces
 - PSR-14 `EventDispatcherInterface` implementation
 
-[Unreleased]: https://github.com/slickframework/event/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/slickframework/event/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/slickframework/event/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/slickframework/event/compare/be7a44d...v1.0.0
