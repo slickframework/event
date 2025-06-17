@@ -3,7 +3,7 @@
     "description": "Simple PSR-14 event handling implementation.",
     "type": "library",
     "license": "MIT",
-    "version": "v1.1.0",
+    "version": "v1.1.1",
     "homepage": "https://github.com/slickframework/event",
     "authors": [
         {

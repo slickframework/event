@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.1.1] - 2025-06-17
+### Fixed
+- Fixed an issue in AttributeListenerProvider where event bindings were incorrectly assumed
+  to be nested arrays, resulting in listeners not being invoked for dispatched events.
+
 ## [v1.1.0] - 2025-06-17
 ### Added
 - Adding a Scrutinizer CI configuration for static analysis
@@ -24,5 +29,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - PSR-14 `EventDispatcherInterface` implementation
 
 [Unreleased]: https://github.com/slickframework/event/compare/v1.1.0...HEAD
+[v1.1.1]: https://github.com/slickframework/event/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/slickframework/event/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/slickframework/event/compare/be7a44d...v1.0.0
