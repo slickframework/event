@@ -26,16 +26,17 @@ final class EventDispatcher implements SlickEventDispatcher, EventGenerator
 {
 
     use EventGeneratorMethods;
+    use DispatcherTools;
 
     /**
      * @var bool
      */
-    private static $dispatching = false;
+    private static bool $dispatching = false;
 
     /**
-     * @var array
+     * @var array<string, array{listener: EventListener|callable|ListenerProviderInterface, priority: int}>
      */
-    private $listeners = [];
+    private array $listeners = [];
 
     /**
      * Dispatches events form an event generator
@@ -129,7 +130,7 @@ final class EventDispatcher implements SlickEventDispatcher, EventGenerator
      * @param Object $event
      * @return Object
      */
-    private function invokeListener($listener, Object $event)
+    private function invokeListener($listener, Object $event): object
     {
         if (is_callable($listener)) {
             return $listener($event);
@@ -140,21 +141,6 @@ final class EventDispatcher implements SlickEventDispatcher, EventGenerator
         }
 
         return $event;
-    }
-
-    /**
-     * Matches the listener register pattern with event
-     *
-     * @param $pattern
-     * @param object $event
-     * @return bool
-     */
-    private function match($pattern, object $event): bool
-    {
-        $regEx = str_replace(['\\', '*'], ['\\\\', '(.*)'], $pattern);
-        $regEx = "/$regEx/i";
-        $name = get_class($event);
-        return (bool) preg_match($regEx, $name);
     }
 
     /**
@@ -175,28 +161,6 @@ final class EventDispatcher implements SlickEventDispatcher, EventGenerator
                 $unordered[] = $datum;
             }
         }
-        return $unordered;
-    }
-
-    /**
-     * orderedListeners
-     *
-     * @param array $unordered
-     * @return array
-     */
-    private function orderedListeners(array $unordered): array
-    {
-        usort($unordered, function ($a, $b) {
-            if ($a->priority > $b->priority) {
-                return -1;
-            }
-
-            if ($a->priority === $b->priority) {
-                return 0;
-            }
-
-            return 1;
-        });
         return $unordered;
     }
 }

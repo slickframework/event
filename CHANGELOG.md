@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-
--   Adding a Scrutinizer CI configuration for static analysis
+- Adding a Scrutinizer CI configuration for static analysis
+- Attribute-based listener discovery
 
 ### Changed
--   Updating the PHP version to 8.2
--   Switching from Travis CI to GitHub Actions for CI
--   Updating dependencies and dev dependencies to their latest versions
+- Updating the PHP version to 8.2
+- Switching from Travis CI to GitHub Actions for CI
+- Updating dependencies and dev dependencies to their latest versions
 
 ## [v1.0.0] - 2020-04-26
 ### Added

@@ -3,7 +3,7 @@
     "description": "Simple PSR-14 event handling implementation.",
     "type": "library",
     "license": "MIT",
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "homepage": "https://github.com/slickframework/event",
     "authors": [
         {
@@ -18,11 +18,18 @@
             "Slick\\Event\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Slick\\Event\\Test\\": "spec"
+        }
+    },
     "require": {
         "php": ">=8.2",
         "ext-json": "*",
+        "psr/container": "*",
         "psr/event-dispatcher": "*",
-        "ramsey/uuid": "*"
+        "ramsey/uuid": "*",
+        "slick/fswatch": "*"
     },
     "scripts": {
         "test": "phpspec run --format=dot",
@@ -31,8 +38,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev",
-            "dev-develop": "1.1-dev"
+            "dev-master": "1.1-dev",
+            "dev-develop": "1.2-dev"
         }
     },
     "config": {
