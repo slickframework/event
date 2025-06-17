@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [v1.1.0] - 2025-06-17
 ### Added
 - Adding a Scrutinizer CI configuration for static analysis
 - Attribute-based listener discovery
@@ -21,5 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `Event`, `EventGenerator`, `EventListerner` and `Event dispatcher` interfaces
 - PSR-14 `EventDispatcherInterface` implementation
 
-[Unreleased]: https://github.com/slickframework/event/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/slickframework/event/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/slickframework/event/compare/v1.0.0...v1.1.0
 [v1.0.0]: https://github.com/slickframework/event/compare/be7a44d...v1.0.0
