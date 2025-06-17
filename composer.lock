@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e58dc987cc1dad4c313ae64e7cdb635",
+    "content-hash": "74505a9e941a8f080a7593aec344530f",
     "packages": [
         {
             "name": "brick/math",
@@ -1152,12 +1152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "6739594c6563c153bb32b756db6232310b0e4cf7"
+                "reference": "3a9a4b2a4a500e312369055f8a7fe49251ca5ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/6739594c6563c153bb32b756db6232310b0e4cf7",
-                "reference": "6739594c6563c153bb32b756db6232310b0e4cf7",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/3a9a4b2a4a500e312369055f8a7fe49251ca5ae2",
+                "reference": "3a9a4b2a4a500e312369055f8a7fe49251ca5ae2",
                 "shasum": ""
             },
             "require": {
@@ -1229,7 +1229,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-06-14T08:45:00+00:00"
+            "time": "2025-06-17T14:05:13+00:00"
         },
         {
             "name": "symfony/console",
