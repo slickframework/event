@@ -30,7 +30,7 @@ final class EventId
      *
      * @param string $identifier
      */
-    public function __construct(string $identifier = null)
+    public function __construct(?string $identifier = null)
     {
         $identifier = $identifier ?: Uuid::uuid4()->toString();
         if (!Uuid::isValid($identifier)) {
